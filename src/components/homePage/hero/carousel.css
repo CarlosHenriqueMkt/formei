@@ -1,0 +1,39 @@
+.carousel {
+	/* 	position: absolute;
+	left: -150px; /* Só funciona até 613px de largura
+	top: auto; */
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 768px;
+	position: relative;
+}
+
+.carouselInner {
+	white-space: nowrap;
+}
+
+.carouselItem {
+	display: inline-block;
+	width: 100%;
+}
+
+.carouselControl {
+	background-color: transparent;
+	border: none;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: calc(50% - 25px);
+	cursor: pointer;
+}
+
+.left {
+	left: 0;
+	font-size: 40px;
+}
+
+.right {
+	right: 0;
+	font-size: 40px;
+}
