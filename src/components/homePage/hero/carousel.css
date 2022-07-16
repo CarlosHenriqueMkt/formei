@@ -1,10 +1,8 @@
 .carousel {
-	/* 	position: absolute;
-	left: -150px; /* Só funciona até 613px de largura
-	top: auto; */
 	margin: 0 auto;
 	overflow: hidden;
-	max-width: 768px;
+	max-height: auto;
+	max-width: 100%;
 	position: relative;
 }
 
@@ -15,6 +13,10 @@
 .carouselItem {
 	display: inline-block;
 	width: 100%;
+}
+
+.carouselItem img {
+	width: 100vw;
 }
 
 .carouselControl {

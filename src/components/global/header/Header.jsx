@@ -12,6 +12,10 @@ export const Header = () => {
 		setIsOpen(!isOpen);
 	};
 
+	const handleCloseMenu = () => {
+		setIsOpen(false);
+	};
+
 	return (
 		<>
 			<Box className="header">
@@ -23,22 +27,46 @@ export const Header = () => {
 				</Box>
 
 				<Box className={menuClassName}>
-					<Link className="menuItem" to="#Hero">
+					<Link
+						className="menuItem"
+						to="#Hero"
+						onClick={handleCloseMenu}
+					>
 						Início
 					</Link>
-					<Link className="menuItem" to="#MotivationOne">
+					<Link
+						className="menuItem"
+						to="#MotivationOne"
+						onClick={handleCloseMenu}
+					>
 						Diferencial
 					</Link>
-					<Link className="menuItem" to="#CourseSlider">
+					<Link
+						className="menuItem"
+						to="#CourseSlider"
+						onClick={handleCloseMenu}
+					>
 						Cursos
 					</Link>
-					<Link className="menuItem" to="#About">
+					<Link
+						className="menuItem"
+						to="#About"
+						onClick={handleCloseMenu}
+					>
 						Sobre Nós
 					</Link>
-					<Link className="menuItem" to="#Depoiments">
+					<Link
+						className="menuItem"
+						to="#Depoiments"
+						onClick={handleCloseMenu}
+					>
 						Depoimentos
 					</Link>
-					<Link className="menuItem" to="#Blog">
+					<Link
+						className="menuItem"
+						to="#Blog"
+						onClick={handleCloseMenu}
+					>
 						Blog
 					</Link>
 				</Box>
