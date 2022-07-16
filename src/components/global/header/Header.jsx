@@ -18,6 +18,9 @@ export const Header = () => {
 
 	return (
 		<>
+			<Box className="topHeader">
+				<h1>Cursos profissionalizantes em Nova Iguaçu</h1>
+			</Box>
 			<Box className="header">
 				<Box className="logo">
 					<Image

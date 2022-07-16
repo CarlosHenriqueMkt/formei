@@ -13,6 +13,7 @@
 .carouselItem {
 	display: inline-block;
 	width: 100%;
+	position: relative;
 }
 
 .carouselItem img {
@@ -22,20 +23,53 @@
 .carouselControl {
 	background-color: transparent;
 	border: none;
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	position: absolute;
-	height: 50px;
-	width: 50px;
+	height: 60px;
+	width: 60px;
 	top: calc(50% - 25px);
 	cursor: pointer;
 }
 
 .left {
 	left: 0;
-	font-size: 40px;
+	font-size: 20px;
+	justify-content: flex-start;
 }
 
 .right {
 	right: 0;
-	font-size: 40px;
+	font-size: 20px;
+	justify-content: flex-end;
+}
+
+@media (min-width: 1024px) {
+	.carouselControl {
+		height: 90px;
+		width: 90px;
+	}
+
+	.left {
+		font-size: 50px;
+	}
+
+	.right {
+		font-size: 50px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.carouselControl {
+		height: 160px;
+		width: 160px;
+	}
+
+	.left {
+		font-size: 100px;
+	}
+
+	.right {
+		font-size: 100px;
+	}
 }
