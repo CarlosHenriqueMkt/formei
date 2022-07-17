@@ -6,3 +6,10 @@ import slide4 from "./slides/1800x730/creche.png";
 const slides = [slide1, slide2, slide3, slide4];
 
 export default slides;
+
+/* const slides = [
+    title: ,
+    subtitle: ,
+    image: ,
+    button: ,
+] */

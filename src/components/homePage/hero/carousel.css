@@ -16,6 +16,33 @@
 	position: relative;
 }
 
+/* .carouselItem {
+	display: flex;
+	width: 100%;
+	position: relative; 
+
+} 
+
+.boxLeft { 
+	flex-basis: 50%;
+}
+
+.boxRight {  
+	flex-basis: 50%;
+	background-color: #1D4259
+}
+
+.boxRight p {
+	color: #fff
+}
+
+.boxRight img {
+	align-items: flex-end;
+	justify-content: center;
+}
+
+*/
+
 .carouselItem img {
 	width: 100vw;
 }
