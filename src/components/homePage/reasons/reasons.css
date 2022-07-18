@@ -1,8 +1,13 @@
-.container h2 {
-	font-size: 25px;
+.reasonsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 100vw;
 }
 
-.containerReasons {
+.reasons {
 	width: 100%;
 	height: auto;
 	margin: 20px auto;
@@ -12,6 +17,15 @@
 	justify-content: space-around;
 
 	flex-wrap: wrap;
+}
+
+.reasonsTitle {
+	width: 90%;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 10px;
+	color: #1d4259;
+	border-bottom: 1px solid black;
 }
 
 .allBoxes {
@@ -26,7 +40,7 @@
 	height: 182px;
 
 	padding: 70px 40px;
-	margin: 10px;
+	margin: 10px 20px 10px 20px;
 
 	border-radius: 32px;
 
@@ -52,7 +66,7 @@
 	}
 
 	.allBoxes {
-		flex: 1 1 auto;
+		width: auto;
 	}
 
 	.allBoxes .iconReasons {

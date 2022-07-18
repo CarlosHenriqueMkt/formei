@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { IoDiamondOutline } from "react-icons/io5";
 import { GiTeacher } from "react-icons/gi";
 import { MdPriceCheck } from "react-icons/md";
@@ -8,19 +8,13 @@ import React from "react";
 export const Reasons = () => {
 	return (
 		<>
-			<Box display="flex" flexDirection="column" className="container">
-				<Box>
-					<Heading
-						as="h2"
-						textAlign="center"
-						margin="20px 0 10px 0"
-						size="2xl"
-						color="#1D4259"
-					>
-						Diferenciais da Formei
-					</Heading>
-				</Box>
-				<Box className="containerReasons">
+			<Box
+				display="flex"
+				flexDirection="column"
+				className="reasonsContainer"
+			>
+				<h2 className="reasonsTitle">Diferenciais da Formei</h2>
+				<Box className="reasons">
 					<Box className="allBoxes">
 						<Box className="iconBg">
 							<IoDiamondOutline className="iconReasons" />

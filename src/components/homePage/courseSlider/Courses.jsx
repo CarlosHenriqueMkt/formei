@@ -1,6 +1,5 @@
 import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import "./course.css";
 import courses from "./data";
 
@@ -9,20 +8,10 @@ export const Courses = () => {
 		<>
 			<Box className="coursesContainer">
 				<Box className="coursesTitle">
-					<Box>
-						<Heading as="h2" size="md">
-							{" "}
-							Nossos cursos{" "}
-						</Heading>
-					</Box>
-					<Box>
-						<Button>
-							<GrFormPrevious className="courseIcon" />
-						</Button>
-						<Button>
-							<GrFormNext className="courseIcon" />
-						</Button>
-					</Box>
+					<Heading as="h2" size="lg">
+						{" "}
+						Nossos cursos{" "}
+					</Heading>
 				</Box>
 				<Box className="coursesBox">
 					{courses.map((courses) => {
@@ -30,12 +19,16 @@ export const Courses = () => {
 
 						return (
 							<>
-								<Image src={image}></Image>
-								<Heading as="h3" size="sm">
-									{title}
-								</Heading>
-								<Text as="p">R$ {price}</Text>
-								<Button href={link}>Matricule-se agora!</Button>
+								<Box className="coursesBoxItem">
+									<Image src={image}></Image>
+									<Heading as="h3" size="sm">
+										{title}
+									</Heading>
+									<Text as="p">R$ {price}</Text>
+									<Button href={link}>
+										Matricule-se agora!
+									</Button>
+								</Box>
 							</>
 						);
 					})}

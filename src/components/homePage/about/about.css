@@ -1,0 +1,181 @@
+.aboutContainer {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.aboutContainer:before {
+	content: "";
+	background: url("../../../utils/assets/media/About/business-woman.jpg")
+		no-repeat center center/cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.aboutTitle {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+
+	padding: 20px;
+}
+
+.aboutTitle h2 {
+	font-size: 30px;
+	font-weight: 600;
+	border-bottom: 3px solid #d96055;
+
+	margin: 30px 0 10px 0;
+}
+
+.aboutTitle p {
+	text-align: center;
+	font-size: 16px;
+}
+
+.aboutContent {
+	display: flex;
+	flex-wrap: wrap;
+
+	align-items: center;
+	justify-content: center;
+
+	margin: 50px auto;
+}
+
+.aboutBox {
+	border: 2px solid #d96055;
+	border-radius: 16px;
+
+	text-align: center;
+
+	margin: 30px;
+	padding: 25px;
+}
+
+.aboutBox h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.aboutBox p {
+	text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+	.aboutContent {
+		flex-direction: column;
+	}
+
+	.aboutTitle h2 {
+		font-size: 48px;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+
+	.aboutTitle p {
+		font-size: 22px;
+	}
+
+	.aboutBox h3 {
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	.aboutBox p {
+		text-transform: capitalize;
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.aboutContent {
+		flex-direction: row;
+	}
+
+	.aboutTitle h2 {
+		font-size: 68px;
+		font-weight: 600;
+		margin: 0px 0 60px 0;
+	}
+
+	.aboutTitle p {
+		font-size: 30px;
+	}
+
+	.aboutBox h3 {
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	.aboutBox p {
+		text-transform: capitalize;
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.aboutContent {
+		flex-direction: row;
+	}
+
+	.aboutTitle h2 {
+		font-size: 70px;
+		font-weight: 600;
+		margin: 0px 0 60px 0;
+	}
+
+	.aboutTitle p {
+		font-size: 28px;
+	}
+
+	.aboutBox h3 {
+		font-size: 48px;
+		font-weight: 600;
+	}
+
+	.aboutBox p {
+		text-transform: capitalize;
+		font-size: 36px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.aboutContent {
+		flex-direction: row;
+	}
+
+	.aboutTitle h2 {
+		font-size: 100px;
+		font-weight: 600;
+		margin: 0px 0 60px 0;
+	}
+
+	.aboutTitle p {
+		font-size: 80px;
+	}
+
+	.aboutBox h3 {
+		font-size: 60px;
+		font-weight: 600;
+	}
+
+	.aboutBox p {
+		text-transform: capitalize;
+		font-size: 48px;
+	}
+}

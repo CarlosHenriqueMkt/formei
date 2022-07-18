@@ -29,7 +29,7 @@
 	flex-direction: column;
 	text-align: center;
 	height: 200px;
-	top: 85px;
+	top: 83px;
 	transition: height 0.7s ease-in;
 	overflow: hidden;
 	background: linear-gradient(to right, #05aff2, #1d4259);
