@@ -53,6 +53,7 @@ export const Carousel = ({
 			<Box
 				className="carouselInner"
 				style={{ transform: `translateX(${-currentSlide * 100}%)` }}
+				id="hero"
 			>
 				{slides.map((slide, index) => (
 					<Box className="carouselItem">

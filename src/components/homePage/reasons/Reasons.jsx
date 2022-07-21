@@ -13,7 +13,9 @@ export const Reasons = () => {
 				flexDirection="column"
 				className="reasonsContainer"
 			>
-				<h2 className="reasonsTitle">Diferenciais da Formei</h2>
+				<h2 className="reasonsTitle" id="reasons">
+					Diferenciais da Formei
+				</h2>
 				<Box className="reasons">
 					<Box className="allBoxes">
 						<Box className="iconBg">

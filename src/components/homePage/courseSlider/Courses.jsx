@@ -8,7 +8,7 @@ export const Courses = () => {
 		<>
 			<Box className="coursesContainer">
 				<Box className="coursesTitle">
-					<Heading as="h2" size="lg">
+					<Heading as="h2" size="lg" id="courses">
 						{" "}
 						Nossos cursos{" "}
 					</Heading>

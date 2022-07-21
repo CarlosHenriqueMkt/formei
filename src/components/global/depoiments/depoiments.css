@@ -1,0 +1,53 @@
+.dpContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 10px 50px 10px;
+}
+
+.dpTitle {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+
+	border-bottom: 1px solid #1d4259;
+
+	margin-bottom: 25px;
+}
+
+.dpButton {
+	background-color: #d96055;
+	margin: 2px;
+	font-size: 20px;
+}
+
+.depoiments {
+	border: 1px solid #1d4259;
+	border-radius: 16px;
+	padding: 15px;
+	margin: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.depoiments p {
+	padding: 10px;
+}
+
+.depoiments img {
+	object-fit: cover;
+	border-radius: 50px;
+	margin: 10px;
+}
+
+@media (min-width: 768px) {
+	.dpBoxes {
+		display: flex;
+		flex-direction: row;
+	}
+}

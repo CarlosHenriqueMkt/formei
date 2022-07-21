@@ -7,7 +7,7 @@ export const About = () => {
 		<>
 			<Box className="container">
 				<Box className="aboutContainer">
-					<Box className="aboutTitle">
+					<Box className="aboutTitle" id="about">
 						<h2>Formei</h2>
 						<p>
 							A escola de qualificação profissional que vai mudar

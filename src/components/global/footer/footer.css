@@ -1,0 +1,46 @@
+.footerContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--darkBlue);
+	padding: 20px;
+}
+
+.footerContainer h4 {
+	color: var(--softGray);
+	margin: 15px;
+}
+
+.footerCursos,
+.footerFormei {
+	margin-bottom: 15px;
+}
+
+.footerFormei > div,
+.footerCursos > div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	color: var(--softGray);
+}
+
+@media (min-width: 768px) {
+	.footerContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.footerContainer h4 {
+		margin: 22px;
+		font-size: 48px;
+	}
+
+	.footerFormei > div,
+	.footerCursos > div {
+		font-size: 20px;
+		gap: 20px;
+	}
+}

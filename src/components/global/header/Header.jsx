@@ -1,5 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Box, Image, Link } from "@chakra-ui/react";
 import React, { useState } from "react";
 import logo from "../../../utils/assets/media/Logos/logo-nobg.png";
 import "./header.css";
@@ -32,45 +31,45 @@ export const Header = () => {
 				<Box className={menuClassName}>
 					<Link
 						className="menuItem"
-						to="#Hero"
+						href="#hero"
 						onClick={handleCloseMenu}
 					>
 						Início
 					</Link>
 					<Link
 						className="menuItem"
-						to="#MotivationOne"
+						href="#reasons"
 						onClick={handleCloseMenu}
 					>
 						Diferencial
 					</Link>
 					<Link
 						className="menuItem"
-						to="#CourseSlider"
+						href="#courses"
 						onClick={handleCloseMenu}
 					>
 						Cursos
 					</Link>
 					<Link
 						className="menuItem"
-						to="#About"
+						href="#about"
 						onClick={handleCloseMenu}
 					>
 						Sobre Nós
 					</Link>
 					<Link
 						className="menuItem"
-						to="#Depoiments"
+						href="#about"
 						onClick={handleCloseMenu}
 					>
 						Depoimentos
 					</Link>
 					<Link
 						className="menuItem"
-						to="#Blog"
+						href="#contact"
 						onClick={handleCloseMenu}
 					>
-						Blog
+						Contato
 					</Link>
 				</Box>
 
