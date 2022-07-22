@@ -22,8 +22,8 @@ export const Form = () => {
 				>
 					<div id="mc_embed_signup_scroll" className="formBox">
 						<h2>Assine e receba promoções exclusivas!</h2>
-						<div class="mc-field-group">
-							<label for="mce-EMAIL">E-mail:</label>
+						<div class="boxInput">
+							<label for="mce-EMAIL">Seu melhor E-mail:</label>
 							<input
 								type="email"
 								value={value.email}
@@ -40,12 +40,12 @@ export const Form = () => {
 							<div
 								class="response"
 								id="mce-error-response"
-								className="DisplayNone"
+								className="displayNone"
 							></div>
 							<div
 								class="response"
 								id="mce-success-response"
-								className="DisplayNone"
+								className="displayNone"
 							></div>
 						</div>
 
@@ -60,10 +60,10 @@ export const Form = () => {
 							/>
 						</div>
 						<div class="optionalParent">
-							<div class="clear foot">
+							<div class="clearFoot">
 								<input
 									type="submit"
-									value="Subscribe"
+									value="Enviar!"
 									name="subscribe"
 									id="mc-embedded-subscribe"
 									class="button"

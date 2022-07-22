@@ -13,12 +13,12 @@
 	display: flex;
 	align-items: center;
 
-	color: #1d4259;
+	color: var(--darkBlue);
 
 	width: 90%;
 	margin: 0 10px 0 10px;
 
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--darkBlue);
 }
 
 .coursesBox {
@@ -53,10 +53,10 @@
 
 .coursesBox button {
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
-	color: #fff;
+	color: var(--white);
 	padding: 12px 24px;
 	margin: 8px;
-	background-color: #d96055;
+	background-color: var(--orange);
 	border: none;
 	border-radius: 8px;
 	font-size: 14px;
