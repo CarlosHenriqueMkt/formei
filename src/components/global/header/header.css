@@ -34,6 +34,7 @@
 	overflow: hidden;
 	background: linear-gradient(to right, #05aff2, #1d4259);
 	z-index: 1;
+	justify-content: center;
 }
 
 .openMenu .menuItem {

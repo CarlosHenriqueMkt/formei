@@ -1,0 +1,38 @@
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+
+	padding: 15px;
+	margin: 15px 0 5px 0;
+}
+
+.formBox h2 {
+	margin-bottom: 15px;
+}
+
+.absolutLeft {
+	position: absolute;
+	left: -5000px;
+}
+
+.DisplayNone {
+	display: none;
+}
+
+.button {
+	margin-bottom: 15px;
+	padding: 8px 12px 8px 12px;
+	border-radius: 8px;
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+.requiredEmail {
+	border: 1px solid var(--darkBlue);
+	border-radius: 3px;
+	margin: 0 0 15px 5px;
+	color: var(--darkBlue);
+}

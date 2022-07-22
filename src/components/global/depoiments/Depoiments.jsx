@@ -8,7 +8,7 @@ export const Depoiments = () => {
 	return (
 		<Box className="dpContainer">
 			<Box className="dpTitle">
-				<Heading as="h3" size="lg">
+				<Heading as="h3" size="lg" id="depoiments">
 					Depoimentos
 				</Heading>
 				<Box>

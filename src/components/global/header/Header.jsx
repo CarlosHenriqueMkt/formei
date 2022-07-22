@@ -38,13 +38,6 @@ export const Header = () => {
 					</Link>
 					<Link
 						className="menuItem"
-						href="#reasons"
-						onClick={handleCloseMenu}
-					>
-						Diferencial
-					</Link>
-					<Link
-						className="menuItem"
 						href="#courses"
 						onClick={handleCloseMenu}
 					>
@@ -59,7 +52,7 @@ export const Header = () => {
 					</Link>
 					<Link
 						className="menuItem"
-						href="#about"
+						href="#depoiments"
 						onClick={handleCloseMenu}
 					>
 						Depoimentos

@@ -18,11 +18,10 @@ export const Footer = () => {
 				<Box className="footerFormei">
 					<Heading as="h4">Formei</Heading>
 					<Box>
-						<Link>Início</Link>
-						<Link>Diferencial </Link>
-						<Link>Sobre nós</Link>
-						<Link>Depoimentos</Link>
-						<Link>Contato</Link>
+						<Link href="#hero">Início</Link>
+						<Link href="#about">Sobre nós</Link>
+						<Link href="#depoiments">Depoimentos</Link>
+						<Link href="#contact">Contato</Link>
 					</Box>
 				</Box>
 			</Box>
