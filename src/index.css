@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 :root {
+	/* Main colors */
 	--darkBlue: #1d4259;
 	--lightBlue1: #05aff2;
-	--lightBlue2: #05c7f2;
 	--orange: #d96055;
-	--softGray: #f2f2f2;
 	--white: #fff;
+
+	/* Secundary colors */
+	--lightBlue2: #05c7f2;
+	--softGray: #f2f2f2;
+
+	/* Complementary colors */
+	--whatsapp: #25d366;
 }
 
 * {

@@ -28,7 +28,6 @@ export const Form = () => {
 								type="email"
 								value={value.email}
 								name="EMAIL"
-								class="requiredEmail"
 								id="mce-EMAIL"
 								onChange={handleChange}
 							/>

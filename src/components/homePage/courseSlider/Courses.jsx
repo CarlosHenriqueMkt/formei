@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import "./course.css";
 import courses from "./data";
@@ -15,7 +15,7 @@ export const Courses = () => {
 				</Box>
 				<Box className="coursesBox">
 					{courses.map((courses) => {
-						const { image, title, price, link } = courses;
+						const { image, title, link } = courses;
 
 						return (
 							<>
@@ -24,10 +24,8 @@ export const Courses = () => {
 									<Heading as="h3" size="sm">
 										{title}
 									</Heading>
-									<Text as="p">R$ {price}</Text>
-									<Button href={link}>
-										Matricule-se agora!
-									</Button>
+
+									<Button href={link}>Saiba mais!</Button>
 								</Box>
 							</>
 						);

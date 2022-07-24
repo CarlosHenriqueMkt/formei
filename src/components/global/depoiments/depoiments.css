@@ -8,13 +8,12 @@
 
 .dpTitle {
 	display: flex;
-	width: 90%;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 
-	border-bottom: 1px solid var(--darkBlue);
-
+	width: 90%;
 	margin-bottom: 25px;
+	border-bottom: 1px solid var(--darkBlue);
 }
 
 .dpButton {
@@ -26,14 +25,20 @@
 .depoiments {
 	border: 1px solid var(--darkBlue);
 	border-radius: 16px;
-	padding: 15px;
+
 	margin: 10px;
+	padding: 15px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	align-content: stretch;
 	justify-content: center;
 	text-align: center;
+}
+
+.depoiments h4 {
+	font-size: 22px;
 }
 
 .depoiments p {
@@ -42,6 +47,7 @@
 }
 
 .depoiments img {
+	width: 30%;
 	object-fit: cover;
 	border-radius: 50px;
 	margin: 10px;
@@ -58,8 +64,12 @@
 		max-width: 90%;
 	}
 
+	.depoiments h4 {
+		font-size: 32px;
+	}
+
 	.depoiments p {
 		padding: 10px;
-		font-size: 22px;
+		font-size: 26px;
 	}
 }

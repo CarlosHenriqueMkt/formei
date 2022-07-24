@@ -13,15 +13,17 @@
 	border-radius: 12px;
 }
 
+.formBox {
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	padding: 30px;
+}
+
 .formBox h2 {
-	margin-bottom: 25px;
-	font-size: 26px;
-
-	padding: 15px;
-
-	border-bottom: 3px solid var(--orange);
-	border-radius: 10px;
-	box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	font-size: 22px;
+	color: var(--darkBlue);
+	border-bottom: 0.7px solid var(--darkBlue);
 }
 
 .boxInput {
@@ -29,11 +31,16 @@
 	flex-direction: column;
 	width: 100%;
 	gap: 10px;
-	margin: 45px 0 15px 0;
+	margin: 25px 0 25px 0;
 }
 
 .boxInput label {
-	font-size: 24px;
+	font-size: 20px;
+}
+
+.boxInput input {
+	border-radius: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .absolutLeft {
@@ -47,20 +54,18 @@
 
 .button {
 	padding: 16px 32px 16px 32px;
-	border-radius: 8px;
+	border-radius: 12px;
 	background-color: var(--orange);
 	color: var(--white);
 }
 
-.requiredEmail {
-	border: 1px solid var(--darkBlue);
-	border-radius: 3px;
-}
-
 @media (min-width: 768px) {
+	.formBox h2 {
+		font-size: 32px;
+	}
+
 	.boxInput {
 		display: flex;
-		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
@@ -68,7 +73,16 @@
 		gap: 10px;
 	}
 
+	.boxInput label {
+		font-size: 32px;
+	}
+
 	.boxInput Input {
-		width: 395px;
+		width: 420px;
+		height: 50px;
+	}
+
+	.button {
+		font-size: 32px;
 	}
 }

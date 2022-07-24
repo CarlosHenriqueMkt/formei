@@ -1,7 +1,7 @@
 .topHeader h1 {
 	text-align: center;
 	padding: 5px 0 5px 0;
-	font-size: 12px;
+	font-size: 14px;
 	background: linear-gradient(to right, var(--darkBlue), var(--lightBlue1));
 	color: var(--white);
 }
@@ -24,17 +24,20 @@
 
 .openMenu {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
 	width: 100%;
 	position: absolute;
-	flex-direction: column;
-	text-align: center;
 	height: 200px;
 	top: 83px;
+	background: linear-gradient(to right, var(--lightBlue1), var(--darkBlue));
+
 	transition: height 0.7s ease-in;
 	overflow: hidden;
-	background: linear-gradient(to right, var(--lightBlue1), var(--darkBlue));
 	z-index: 1;
-	justify-content: center;
 }
 
 .openMenu .menuItem {
@@ -48,9 +51,30 @@
 	overflow: hidden;
 }
 
+@media (min-width: 768px) {
+	.topHeader h1 {
+		font-size: 24px;
+	}
+
+	.logo img {
+		width: 200px;
+		height: auto;
+	}
+
+	.icon {
+		font-size: 40px;
+	}
+	.openMenu {
+		top: 137px;
+		height: 350px;
+		font-size: 25px;
+		gap: 15px;
+	}
+}
+
 @media (min-width: 1024px) {
 	.topHeader h1 {
-		font-size: 18px;
+		font-size: 28px;
 	}
 
 	.header img {
@@ -61,11 +85,15 @@
 	.closedMenu {
 		display: flex;
 		flex-direction: row;
+		justify-content: right;
+
 		height: auto;
 		position: static;
-		background-color: transparent;
+
 		margin: 0px 50px 0px 20px;
-		justify-content: right;
+		background-color: transparent;
+
+		font-size: 24px;
 	}
 
 	.openMenu .menuItem {
@@ -88,7 +116,7 @@
 
 @media (min-width: 2560px) {
 	.topHeader h1 {
-		font-size: 36px;
+		font-size: 38px;
 	}
 
 	.menuItem {

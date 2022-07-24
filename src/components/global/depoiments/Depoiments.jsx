@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import depoimentos from "./data";
 import "./depoiments.css";
 
-export const Depoiments = () => {
+export const Depoiments = ({ depoiments }) => {
+	const [currentDep, setCurrentDep] = useState(0);
+
+	const prev = () => {
+		const index = currentDep > 0 ? currentDep - 1 : depoiments.length - 1;
+		setCurrentDep(index);
+	};
+
+	const next = () => {
+		const index = currentDep < depoiments.length - 1 ? currentDep + 1 : 0;
+		setCurrentDep(index);
+	};
+
 	return (
 		<Box className="dpContainer">
 			<Box className="dpTitle">
@@ -13,18 +25,21 @@ export const Depoiments = () => {
 				</Heading>
 				<Box>
 					<Button className="dpButton">
-						<GrFormPrevious />
+						<GrFormPrevious onClick={prev} />
 					</Button>
 					<Button className="dpButton">
-						<GrFormNext />
+						<GrFormNext onClick={next} />
 					</Button>
 				</Box>
 			</Box>
-			{depoimentos.map((depoiments) => {
-				const { name, text, img } = depoiments;
+			<Box
+				className="dpBoxes"
+				style={{ transform: `translateX(${-currentDep * 100}%)` }}
+			>
+				{depoimentos.map((depoiments) => {
+					const { name, text, img } = depoiments;
 
-				return (
-					<Box className="dpBoxes">
+					return (
 						<Box className="depoiments">
 							<Text>{text}</Text>
 							<Image src={img} alt="Estudante da Formei" />
@@ -32,16 +47,9 @@ export const Depoiments = () => {
 								{name}
 							</Heading>
 						</Box>
-						<Box className="depoiments">
-							<Text>{text}</Text>
-							<Image src={img} alt="Estudante da Formei" />
-							<Heading as="h4" size="md">
-								{name}
-							</Heading>
-						</Box>
-					</Box>
-				);
-			})}
+					);
+				})}
+			</Box>
 		</Box>
 	);
 };

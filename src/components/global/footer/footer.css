@@ -39,13 +39,13 @@
 
 	.footerContainer h4 {
 		margin-bottom: 22px;
-		font-size: 48px;
+		font-size: 60px;
 	}
 
 	.footerFormei > div,
 	.footerCursos > div {
-		font-size: 20px;
-		gap: 20px;
+		font-size: 28px;
+		gap: 24px;
 	}
 }
 

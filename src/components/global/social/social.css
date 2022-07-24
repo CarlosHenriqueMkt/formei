@@ -1,7 +1,8 @@
 .socialLinks {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
 
 	background-color: var(--orange);
 
@@ -9,8 +10,91 @@
 	padding: 20px;
 }
 
+.socialBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 50%;
+	margin-top: 30px;
+}
+
 .socialIcon {
-	font-size: 30px;
+	font-size: 40px;
 	color: var(--white);
 	cursor: pointer;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	color: var(--white);
+	border: 1px solid var(--white);
+	border-radius: 18px;
+	padding: 10px;
+}
+
+.contact:hover {
+	background-color: var(--whatsapp);
+}
+
+.contact h4 {
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+@media (min-width: 768px) {
+	.socialLinks {
+		gap: 25px;
+	}
+
+	.socialBox {
+		width: 40%;
+	}
+
+	.socialIcon {
+		font-size: 60px;
+	}
+
+	.contact {
+		padding: 25px;
+	}
+
+	.contact h4 {
+		font-size: 40px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.socialBox {
+		width: 30%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.socialBox {
+		width: 20%;
+	}
+}
+
+@media (min-width: 2560px) {
+	.socialLinks {
+		gap: 30px;
+	}
+
+	.socialBox {
+		width: 15%;
+	}
+
+	.socialIcon {
+		font-size: 70px;
+	}
+
+	.contact {
+		padding: 35px;
+	}
+
+	.contact h4 {
+		font-size: 50px;
+	}
 }

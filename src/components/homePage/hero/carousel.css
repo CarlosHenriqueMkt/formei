@@ -10,17 +10,16 @@
 	white-space: nowrap;
 }
 
-/* .carouselItem {
-	display: inline-block;
-	width: 100%;
-	position: relative;
-} */
-
 .carouselItem {
 	display: inline-block;
 	width: 100%;
 	position: relative;
 }
+/* .carouselItem {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+} */
 
 /* .boxLeft {
 	display: flex;
@@ -84,12 +83,6 @@
 	margin-right: 15px;
 }
 
-/* @media (min-width: 768px) {
-	.boxLeft img {
-		display: none;
-	}
-}
- */
 @media (min-width: 1024px) {
 	.carouselControl {
 		height: 90px;
@@ -103,10 +96,6 @@
 	.right {
 		font-size: 50px;
 	}
-
-	/* 	.boxLeft img {
-		display: none;
-	} */
 }
 
 @media (min-width: 2560px) {
