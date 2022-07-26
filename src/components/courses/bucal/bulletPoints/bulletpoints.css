@@ -1,0 +1,108 @@
+.bulletContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	width: 100vw;
+	margin: 0 auto;
+	position: relative;
+
+	background-color: rgba(0, 0, 0, 0.7);
+	color: var(--white);
+}
+
+.bulletContainer:before {
+	content: "";
+	background: url("../../../../utils/assets/media/About/business-woman.jpg")
+		no-repeat center center/cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.bulletBoxesContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.bulletContainer h3 {
+	margin: 40px 15px 40px 15px;
+	border-bottom: 2px solid var(--orange);
+	font-size: 38px;
+}
+
+.bulletBox {
+	border: 1px solid var(--orange);
+	border-radius: 16px;
+	margin: 15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 5px;
+}
+
+.bulletBox h5 {
+	margin: 12px 12px 0 12px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.bulletBox p {
+	margin: 10px;
+	font-size: 14px;
+}
+
+@media (min-width: 768px) {
+	.bulletBoxesContainer {
+		flex-direction: row;
+	}
+
+	.bulletBox h5 {
+		font-size: 26px;
+	}
+
+	.bulletBox p {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.bulletBoxesContainer {
+		flex-direction: row;
+		width: 90vw;
+	}
+
+	.bulletBox h5 {
+		font-size: 30px;
+	}
+
+	.bulletBox p {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.bulletBoxesContainer {
+		width: 90vw;
+	}
+
+	.bulletContainer h3 {
+		font-size: 60px;
+	}
+
+	.bulletBox h5 {
+		font-size: 40px;
+	}
+
+	.bulletBox p {
+		font-size: 30px;
+	}
+}

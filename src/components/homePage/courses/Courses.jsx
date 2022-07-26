@@ -1,4 +1,5 @@
 import { Box, Button, Heading, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import React from "react";
 import "./course.css";
 import courses from "./data";
@@ -25,7 +26,9 @@ export const Courses = () => {
 										{title}
 									</Heading>
 
-									<Button href={link}>Saiba mais!</Button>
+									<Button>
+										<Link to={link}>Saiba mais!</Link>
+									</Button>
 								</Box>
 							</>
 						);

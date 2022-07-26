@@ -1,9 +1,24 @@
+.titleContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100vw;
+}
+
 .dpContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 50px 10px 50px 10px;
+	width: 100vw;
+	margin: 0px auto;
+	overflow-x: hidden;
+}
+
+.dpBoxes {
+	white-space: nowrap;
+	overflow-wrap: break-word;
 }
 
 .dpTitle {
@@ -26,15 +41,12 @@
 	border: 1px solid var(--darkBlue);
 	border-radius: 16px;
 
-	margin: 10px;
 	padding: 15px;
+	margin-right: 10px;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-content: stretch;
-	justify-content: center;
-	text-align: center;
+	width: 100vw;
+
+	display: inline-block;
 }
 
 .depoiments h4 {
@@ -47,14 +59,10 @@
 }
 
 .depoiments img {
-	width: 30%;
+	width: 20%;
 	object-fit: cover;
 	border-radius: 50px;
 	margin: 10px;
-}
-
-.dpBoxes {
-	width: 90%;
 }
 
 @media (min-width: 768px) {

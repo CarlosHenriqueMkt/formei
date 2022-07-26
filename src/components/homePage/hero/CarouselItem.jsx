@@ -17,12 +17,3 @@ export const CarouselItem = ({ slide, stopSlide, startSlide }) => {
 		</div>
 	);
 };
-
-// Another way to create the slider
-{
-	/* <div className="boxLeft">
-<h2 className="boxLeftTitle">{title}</h2>
-<button className="boxLeftButton">{button}</button>
-<img alt="professonals">{image}</img>
-</div> */
-}

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Box, Image, Link } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import logo from "../../../utils/assets/media/Logos/logo-nobg.png";
-import "./header.css";
+import "./coursesheader.css";
 
-export const Header = () => {
+export default function CoursesHeader() {
 	const [isOpen, setIsOpen] = useState(false);
 	const menuClassName = isOpen ? "openMenu" : "closedMenu";
 	const handleClickMenu = () => {
@@ -17,59 +17,49 @@ export const Header = () => {
 
 	return (
 		<>
-			<Box className="topHeader">
+			<div className="topHeader">
 				<h1>Cursos profissionalizantes em Nova Iguaçu</h1>
-			</Box>
-			<Box className="header">
-				<Box className="logo">
-					<Image
+			</div>
+			<div className="header">
+				<div className="logo">
+					<img
 						src={logo}
 						alt="Logo Formei Qualificação Profissional"
-					></Image>
-				</Box>
+					></img>
+				</div>
 
-				<Box className={menuClassName}>
-					<Link
+				<div className={menuClassName}>
+					<Link className="menuItem" to="/" onClick={handleCloseMenu}>
+						Página inicial
+					</Link>
+					<a
 						className="menuItem"
-						href="#hero"
+						href="#description"
 						onClick={handleCloseMenu}
 					>
-						Início
-					</Link>
-					<Link
+						{" "}
+						Descrição
+					</a>
+					<a
 						className="menuItem"
-						href="#courses"
+						href="#professional"
 						onClick={handleCloseMenu}
 					>
-						Cursos
-					</Link>
-					<Link
-						className="menuItem"
-						href="#about"
-						onClick={handleCloseMenu}
-					>
-						Sobre Nós
-					</Link>
-					<Link
+						Perfil Profissional
+					</a>
+					<a
 						className="menuItem"
 						href="#depoiments"
 						onClick={handleCloseMenu}
 					>
 						Depoimentos
-					</Link>
-					<Link
-						className="menuItem"
-						href="#contact"
-						onClick={handleCloseMenu}
-					>
-						Contato
-					</Link>
-				</Box>
+					</a>
+				</div>
 
-				<Box className="icon">
+				<div className="icon">
 					<HamburgerIcon onClick={handleClickMenu} />
-				</Box>
-			</Box>
+				</div>
+			</div>
 		</>
 	);
-};
+}

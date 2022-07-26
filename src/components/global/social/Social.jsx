@@ -1,22 +1,14 @@
-import { Box, Link, Heading } from "@chakra-ui/react";
+import { Box, Link } from "@chakra-ui/react";
 import React from "react";
-import { FaFacebookSquare, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { FaleConosco } from "../../global/faleconosco/FaleConosco";
 import "./social.css";
 
 export const Social = () => {
-	const handleClick = () => {
-		window.open("https://wa.me/5521968596296");
-	};
-
 	return (
 		<>
 			<Box className="socialLinks" id="contact">
-				<button onClick={handleClick}>
-					<Box className="contact">
-						<Heading as="h4"> Fale conosco </Heading>
-						<FaWhatsapp className="socialIcon" />
-					</Box>
-				</button>
+				<FaleConosco />
 
 				<Box className="socialBox">
 					<Link

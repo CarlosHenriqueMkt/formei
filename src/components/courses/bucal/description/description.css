@@ -1,0 +1,184 @@
+.desContainer {
+	width: 90vw;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+
+	text-align: center;
+
+	margin: 30px auto;
+}
+
+.desContainer h4 {
+	margin: 10px;
+	color: var(--darkBlue);
+}
+.fichaContainer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	margin-top: 15px;
+	gap: 20px;
+}
+
+.descButton {
+	margin: 15px auto;
+}
+
+.descBox {
+	border: 1px solid var(--darkBlue);
+	border-radius: 16px;
+	padding: 10px;
+
+	width: 80vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.descIcon {
+	flex-basis: 10%;
+	width: 100%;
+	align-items: center;
+	font-size: 24px;
+	color: var(--orange);
+	padding: 25px;
+}
+
+.descParagh {
+	flex-basis: 90%;
+	text-align: left;
+	width: 100%;
+	font-weight: 600;
+	font-size: 14px;
+	color: var(--darkBlue);
+}
+
+.gradeButton {
+	display: flex;
+	align-items: center;
+
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--white);
+	background: var(--orange);
+
+	border-radius: 18px;
+
+	padding: 20px;
+	margin: 50px 0 15px 0;
+
+	cursor: pointer;
+}
+
+.gradeButton:hover {
+	background-color: var(--lightBlue1);
+}
+
+.gradeIcon {
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+@media (min-width: 627px) {
+	.desContainer {
+		width: 75vw;
+	}
+	.descBox {
+		width: 40vw;
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.descParagh {
+		font-size: 18px;
+	}
+
+	.descriptionBox h4 {
+		font-size: 38px;
+	}
+
+	.descriptionBox p {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.desContainer {
+		width: 90vw;
+		flex-direction: row;
+
+		gap: 30px;
+	}
+
+	.descBox {
+		width: 30vw;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.descriptionBox {
+		width: 100vw;
+	}
+
+	.descriptionBox h4 {
+		margin: 25px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.desContainer {
+		width: 90vw;
+		flex-direction: row;
+
+		gap: 30px;
+	}
+
+	.descBox {
+		width: 30vw;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.descriptionBox {
+		width: 100vw;
+	}
+
+	.descriptionBox h4 {
+		margin: 28px;
+	}
+
+	.descriptionBox p {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 2560px) {
+	.desContainer {
+		gap: 100px;
+	}
+
+	.descriptionBox h4 {
+		font-size: 60px;
+	}
+
+	.descriptionBox p {
+		font-size: 30px;
+	}
+
+	.descBox {
+		width: 20vw;
+	}
+	.descParagh {
+		font-size: 30px;
+	}
+}

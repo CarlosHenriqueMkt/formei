@@ -25,24 +25,6 @@
 	cursor: pointer;
 }
 
-.contact {
-	display: flex;
-	align-items: center;
-	color: var(--white);
-	border: 1px solid var(--white);
-	border-radius: 18px;
-	padding: 10px;
-}
-
-.contact:hover {
-	background-color: var(--whatsapp);
-}
-
-.contact h4 {
-	margin-right: 10px;
-	font-size: 20px;
-}
-
 @media (min-width: 768px) {
 	.socialLinks {
 		gap: 25px;

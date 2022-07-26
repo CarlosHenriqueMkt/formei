@@ -4,7 +4,7 @@ import { Header } from "../components/global/header/Header";
 import { Form } from "../components/global/newsletter/Form";
 import { Social } from "../components/global/social/Social";
 import { About } from "../components/homePage/about/About";
-import { Courses } from "../components/homePage/courseSlider/Courses";
+import { Courses } from "../components/homePage/courses/Courses";
 import { Hero } from "../components/homePage/hero/Hero";
 
 export default function Home() {
