@@ -139,7 +139,7 @@
 		width: 90vw;
 		flex-direction: row;
 
-		gap: 30px;
+		gap: 60px;
 	}
 
 	.descBox {
@@ -178,7 +178,13 @@
 	.descBox {
 		width: 20vw;
 	}
+
 	.descParagh {
 		font-size: 30px;
+	}
+
+	.gradeButton {
+		font-size: 30px;
+		padding: 35px;
 	}
 }

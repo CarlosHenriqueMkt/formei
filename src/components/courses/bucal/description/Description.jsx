@@ -1,11 +1,12 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
-import { FaleConosco } from "../../../global/faleconosco/FaleConosco";
+
 import "./description.css";
 import { FaUserClock } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
 import { GiFaceToFace } from "react-icons/gi";
 import { BsFillBookmarkStarFill } from "react-icons/bs";
+import { ButtonMatricula } from "../../../global/buttonMatricula/ButtonMatricula";
 
 export const Description = () => {
 	return (
@@ -24,7 +25,7 @@ export const Description = () => {
 					</Text>
 
 					<Box className="descButton">
-						<FaleConosco />
+						<ButtonMatricula />
 					</Box>
 				</Box>
 

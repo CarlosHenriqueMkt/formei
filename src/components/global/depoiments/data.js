@@ -17,7 +17,7 @@ const depoimentos = [
 	{
 		name: "Milca Galvão",
 		img: Aluna3,
-		text: "Eu sem perspectiva de vida, e trabalhando como sempre, faltava algumas coisa pra melhorar a minha vida. Um dia eu, olhando o Facebook, achei esse curso e achei interessante e confesso que fiquei meio assim se era realmente verdade. Pra minha surpresa foi realmente o que eu precisava pra minha vida. Me senti muito a vontade. Elas me atenderam muito bem. Comecei o curso aprendi muito, a professora um amor de pessoa explica muito bem. Muito carinhosa, aliás todos do curso. Terminei, fiz o estágio e já estou trabalhando muito feliz e realizada. Ainda fiquei meio assim se fazia ou não por conta da minha idade, tenho 58 anos, mas eles me deram a maior força.",
+		text: "Eu sem perspectiva de vida, e trabalhando como sempre, faltava algumas coisa pra melhorar a minha vida. Um dia eu, olhando o Facebook, achei esse curso e achei interessante e confesso que fiquei meio assim se era realmente verdade. Pra minha surpresa foi realmente o que eu precisava pra minha vida. Me senti muito a vontade. Elas me atenderam muito bem. Comecei o curso aprendi muito, a professora um amor de pessoa explica muito bem. Muito carinhosa, aliás todos do curso. Terminei, fiz o estágio e já estou trabalhando muito feliz e realizada. Mesmo eu tendo 58 anos, mas eles me deram a maior força.",
 	},
 	{
 		name: "Lucia",

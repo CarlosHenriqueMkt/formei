@@ -1,58 +1,47 @@
-import React, { useState } from "react";
-import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
-import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-import depoimentos from "./data";
+import React from "react";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 import "./depoiments.css";
+import depoimentos from "./data";
 
 export const Depoiments = () => {
-	const [currentDep, setCurrentDep] = useState(0);
-
-	const prev = () => {
-		const index = currentDep > 0 ? currentDep - 1 : depoimentos.length - 1;
-		setCurrentDep(index);
-	};
-
-	const next = () => {
-		const index = currentDep < depoimentos.length - 1 ? currentDep + 1 : 0;
-		setCurrentDep(index);
-	};
-
 	return (
 		<>
-			<Box className="titleContainer">
-				<Box className="dpTitle">
-					<Heading as="h3" size="lg" id="depoiments">
-						Depoimentos
-					</Heading>
-					<Box>
-						<Button className="dpButton">
-							<GrFormPrevious onClick={prev} />
-						</Button>
-						<Button className="dpButton">
-							<GrFormNext onClick={next} />
-						</Button>
-					</Box>
-				</Box>
+			<Box className="dpTitle">
+				<Heading as="h3" size="lg" id="depoiments">
+					Depoimentos
+				</Heading>
 			</Box>
 			<Box className="dpContainer">
-				<Box
-					className="dpBoxes"
-					style={{ transform: `translateX(${-currentDep * 100}%)` }}
+				<Swiper
+					// install Swiper modules
+					modules={[Navigation, Pagination, A11y]}
+					spaceBetween={50}
+					slidesPerView={1}
+					pagination={{ clickable: true }}
+					onSwiper={(swiper) => console.log(swiper)}
+					onSlideChange={() => console.log("slide change")}
 				>
 					{depoimentos.map((depoiments) => {
 						const { name, text, img } = depoiments;
 
 						return (
-							<Box className="depoiments">
+							<SwiperSlide
+								key={depoiments}
+								className="depoiments"
+							>
 								<Text>{text}</Text>
 								<Image src={img} alt="Estudante da Formei" />
 								<Heading as="h4" size="md">
 									{name}
 								</Heading>
-							</Box>
+							</SwiperSlide>
 						);
 					})}
-				</Box>
+				</Swiper>
 			</Box>
 		</>
 	);

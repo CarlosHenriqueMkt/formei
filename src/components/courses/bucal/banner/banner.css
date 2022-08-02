@@ -1,4 +1,4 @@
-.hero {
+.banner {
 	background-color: rgba(0, 0, 0, 0.3);
 	color: var(--white);
 	height: 80vh;
@@ -7,7 +7,7 @@
 	margin-bottom: 20px;
 }
 
-.hero:before {
+.banner:before {
 	content: "";
 	background: url("../banner/images/bannerBG.png") no-repeat center
 		center/cover;
@@ -19,7 +19,7 @@
 	z-index: -1;
 }
 
-.hero .content {
+.banner .bannerContent {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -30,11 +30,11 @@
 	padding: 16px;
 }
 
-.hero h1 {
+.banner h1 {
 	font-size: 38px;
 }
 
-.hero .text {
+.banner .bannerText {
 	margin: 10px;
 	font-size: 16px;
 }

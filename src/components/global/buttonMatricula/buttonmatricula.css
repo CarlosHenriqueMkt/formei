@@ -1,0 +1,29 @@
+.matricula {
+	display: flex;
+	align-items: center;
+
+	color: var(--white);
+	background-color: var(--orange);
+
+	border: 1px solid var(--white);
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0, 3);
+	border-radius: 18px;
+
+	padding: 18px;
+	margin: 25px 0 15px 0;
+}
+
+.matricula:hover {
+	background-color: var(--lightBlue1);
+}
+
+.matricula h5 {
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+@media (min-width: 2560px) {
+	.matricula h5 {
+		font-size: 37px;
+	}
+}
